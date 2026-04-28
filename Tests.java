@@ -1,3 +1,8 @@
+/**
+ * Valeria Hernández Maldonado 25086
+ * Clase de implementación de pruebas unitarias
+ */
+
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;

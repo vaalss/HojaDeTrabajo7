@@ -1,4 +1,10 @@
-//Valeria Hernández Maldonado 25086
+/**
+ * Valeria Hernández Maldonado 25086
+ * Clase encargada de la estructura del árbol, 
+ * así como los métodos de inserción, búsqueda y
+ * el ordenamiento adecuado de dicho árbol
+ */
+
 
 public class BinaryTree<E extends Comparable> {
 
@@ -55,7 +61,7 @@ public class BinaryTree<E extends Comparable> {
     private void inOrder(Node<E> node) {
         if (node != null) {
             inOrder(node.left);
-            System.out.println(node.data); /////////
+            System.out.println(node.data);
             inOrder(node.right);
         }
     }

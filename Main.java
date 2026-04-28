@@ -1,3 +1,9 @@
+/**
+ * Valeria Hernández Maldonado 25086
+ * Clase encargada de manejar los inputs del usuario
+ * y traducir el contenido del archivo "texto.txt"
+ */
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List; 
@@ -10,7 +16,7 @@ public class Main {
         List<Association<String, String>> dictionary = FileHelper.readDictionary("diccionario.txt"); 
         
         for (Association<String, String> association : dictionary) { 
-            tree.insert(association); 
+            tree.insert(association); //crea el árbol con base al diccionario
         } 
         
         List<String> words = FileHelper.readText("texto.txt"); 
@@ -45,17 +51,17 @@ public class Main {
              String[] words = line.split("\\s+"); 
              
              for (String word : words) { 
-                Association<String, String> search = new Association<>(word, null); 
+                Association<String, String> search = new Association<>(word, null); //busca cada una de las palabras en el árbol
                 Association<String, String> result = tree.search(search); 
                 
                 if (result != null) { 
                     System.out.print(result.getValue() + " "); 
                 } else { 
-                    System.out.print("*" + word + "*" + " "); 
+                    System.out.print("*" + word + "*" + " "); //si no se encuentra la palabra, se deja indicada
                 } 
             } 
         } 
         
-        System.out.println(); 
+        System.out.println(); //salto de línea al final de cada línea del archivo original
     } 
 }
