@@ -14,3 +14,9 @@ El vocabulario incluye palabras como:
 - Pronombres, artículos y conectores
 
 Cada palabra en inglés tiene su equivalente en español, formando pares que el programa usa para realizar la traducción.
+
+---
+
+Referencia utilizada para el desarrollo del árbol:
+
+Bailey, D. A. (2007). *Java Structures: Data Structures in Java for the Principled Programmer* (7th ed.). Williams College.
